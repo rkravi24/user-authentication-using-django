@@ -45,17 +45,22 @@ Use Bootstrap for formating the templates.
    cd <project-directory>
    ```
 2. Install dependencies:
-
-3. Apply migrations:
+   ```bash
+   rm -rf venv
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install django
+   ```
+4. Apply migrations:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
-4. Start the development server:
+5. Start the development server:
    ```bash
    python manage.py runserver
    ```
-5. Access the app at `http://127.0.0.1:8000/`.
+6. Access the app at `http://127.0.0.1:8000/`.
 
 ## Configuration
 - **Database**: SQLite3 is used as the default database.
